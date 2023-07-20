@@ -4,26 +4,131 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <style>
     body {
       font-family: "Barlow", sans-serif;
+      margin: 2%;
+    }
+
+    li.menu {
+      list-style-type: none;
+      float: right;
+      margin-right: 5%;
+    }
+
+    .menu h3 {
+      color: #246fb5;
+      font-weight: bold;
+    }
+
+    .menu a {
+      text-decoration: none;
+    }
+
+    .logo-img {
+      width: 20%;
+      float: left;
+    }
+
+    .list {
+      width: 80%;
+      float: right;
+    }
+
+    .logo {
+      width: 50%;
+    }
+
+    h3:hover {
+      text-decoration: underline;
+    }
+    /*
+    #home {
+      text-decoration: underline;
+      color: #246fb5;
+    }
+    */
+
+    .main-text h1 {
+      color: #246fb5;
+      /*text-shadow: 1px 1px 8px #000000;
+      filter: drop-shadow(15px 12px 11px black); */
+      text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .home {
+      padding-top: 15%;
+      width: 35%;
+    }
+
+    .url {
+      color: #246fb5;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    .url:hover {
+      text-decoration: underline;
+    }
+
+    .main-text {
+      width: 70%;
+      float: left;
+    }
+
+    .main-text-h1 {
+      width: 110%;
+    }
+
+    .main-text-h4 {
+      width: 115%;
+    }
+
+    .slider {
+      width: 30%;
+      float: right;
     }
   </style>
   <body>
     <div class="navbar">
-      <ul>
-        <li><b>HOME</b></li>
-        <li><b>ABOUT US</b></li>
-        <li><b>PORTFOLIO</b></li>
-        <li><b>CONTACT US</b></li>
-      </ul>
+      <div class="logo-img">
+        <img src="/logomy.png" class="logo" alt="logo" />
+      </div>
+      <div class="list">
+        <ul>
+          <li class="menu">
+            <a href="#"><h3>CONTACT US</h3></a>
+          </li>
+          <li class="menu">
+            <a href="#"><h3>PORTFOLIO</h3></a>
+          </li>
+          <li class="menu">
+            <a href="#"><h3>ABOUT US</h3></a>
+          </li>
+          <li class="menu" id="home">
+            <a href="#"><h3>HOME</h3></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="home">
+      <div class="main-text">
+        <div class="main-text-h1">
+          <h1>One of the best artificial intelligence company</h1>
+        </div>
+        <div class="main-text-h4">
+          <h4>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque
+            aliquam vestibulum morbi blandit cursus risus at ultrices.
+          </h4>
+        </div>
+
+        <a href="https://www.youtube.com/" class="url"><h3>OUR HISTORY</h3></a>
+      </div>
+      <div class="slider"></div>
+      <div class="footer"></div>
     </div>
   </body>
 </html>
