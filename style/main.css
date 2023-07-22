@@ -344,3 +344,66 @@
   }
   
  }
+
+ @media (max-width: 932px) {
+  .navbar {
+    width: 100%;
+    padding: 1%;
+    height: 5%;
+  }
+
+  .list {
+    display: none;
+  }
+
+  .logo-img {
+    float: right;
+    margin-right: -20%;
+  }
+
+  .home, .about_us, .portfoli, .contact_us {
+    padding-top: 5%;
+  }
+
+  .component, .component-portfolio {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .main-text {
+    width: 100%;
+    margin-top: -10%;
+  }
+
+  .slideshow-container {
+    width: 50%;
+  }
+
+  .mySlides {
+    width: 75%;
+    margin-top: 1%;
+    margin-left: 15%;
+  }
+
+  .next, .prev {
+    top: 15%;
+  }
+
+  .slider {
+    margin-top: 2%;
+    height: 50%;
+  }
+
+  .dots {
+    margin-top: -55%;
+  }
+
+  .dot {
+    border-radius: 0;
+    width: 20px;
+    height: 5px;
+  }
+
+  .footers {
+    margin-top: -6%;
+  }
+ }
