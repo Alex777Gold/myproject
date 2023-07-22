@@ -60,7 +60,6 @@
   .url {
     color: #246fb5;
     text-decoration: none;
-    text-align: center;
   }
 
   .url:hover {
@@ -71,6 +70,10 @@
     margin: 3%;
     width: 70%;
     float: left;
+  }
+
+  .main-text a {
+    text-align: center;
   }
 
   .slider {
@@ -113,9 +116,42 @@
     align-items: center;
   }
 
-  .portfolio {
+  .about_us, .portfolio {
     padding-top: 150px;
   }
+
+  .component-contact {
+    grid-template-columns: 1fr;
+    padding-bottom: -150px;
+  }
+
+  .component-contact h1 {
+    text-align: center;
+  }
+
+  .container h2 {
+    color: #246fb5;
+  }
+
+  .container {
+    display: grid;
+    align-items: center;
+    text-align: left;
+    grid-template-columns: 1fr 1fr;
+    justify-content: end;
+  }
+
+  .image_contact {
+    justify-content: start;
+    text-align: right;
+    margin-right: 140px;
+  }
+
+  .image_contact a {
+    text-align: left;
+  }
+
+
 
   /*Test slider*/
 
