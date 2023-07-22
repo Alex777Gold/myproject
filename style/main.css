@@ -12,7 +12,8 @@
     width: 100%;
     float: right;
     padding: 3%;
-    /*background-color: white;*/
+    z-index: 9999;
+    background-color: white;
   }
 
   .list ul {
@@ -180,6 +181,12 @@
     padding-top: 150px;
   }
 
+  .image img {
+    width: auto;
+    height: auto;
+    margin: 3px;
+  }
+
   /*Test slider*/
 
   .mySlides {
@@ -267,10 +274,6 @@
     transform: translateX(-30%);
   }
 
-  .navbar {
-    background-color: white;
-  }
-
   .list {
     display: none;
     float: left;
@@ -309,13 +312,19 @@
   }
 
   .image {
-    width: 100%;
-  }
-
-  .image img {
     width: 85%;
   }
 
+  .image img {
+    width: 160px;
+    height: auto;
+  }
+/*
+  .image img {
+    width: 160px;
+    height: auto;
+  }
+*/
   .home, .about_us, .portfoli, .contact_us {
     padding-top: 15%;
   }
