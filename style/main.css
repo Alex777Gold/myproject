@@ -263,6 +263,10 @@
    width: 100%;
  }
 
+ .main-text-h1 {
+  text-align: center;
+ }
+
  @media (max-width: 438px) {
 
   body {
@@ -346,7 +350,7 @@
   
  }
 
- @media (max-width: 932px) {
+ @media (min-width: 932px) {
 
   body {
     font-size: 15px;
@@ -366,7 +370,8 @@
   .logo-img {
     width: 25%;
     float: right;
-    margin-right: -15%;
+    margin-right: -10%;
+    margin-top: 2%;
   }
 
   .home, .about_us, .portfoli, .contact_us {
@@ -411,12 +416,8 @@
     height: 5px;
   }
 
-  .portfolio {
-    margin-bottom: 30%;
-  }
-
   .footers {
-    margin-top: -3%;
+    margin-top: -2%;
   }
 
   .image img {
@@ -448,6 +449,7 @@
 
   .container {
     float: left;
+    grid-template-columns: 1fr 10fr 1fr 10fr;
+    margin-bottom: 10%;
   }
-
  }
