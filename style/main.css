@@ -89,15 +89,19 @@ body {
     width: 70%;
     float: left;
   }
-
+/*
   .main-text-h1 {
-    width: 110%;
+    width: 90%;
   }
 
   .main-text-h4 {
-    width: 115%;
+    width: 75%;
   }
 
+  .main-text h3 {
+    width: 70%;
+  }
+*/
   .slider {
     width: 20%;
     float: right;
@@ -148,7 +152,7 @@ body {
 
   .dots {
     text-align: center;
-    margin-top: 60px;
+    margin-top: 55px;
   }
 
 /* Slideshow container */
@@ -208,4 +212,8 @@ body {
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
+}
+
+.fade img {
+  width: 100%;
 }
