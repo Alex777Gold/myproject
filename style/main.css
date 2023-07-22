@@ -113,6 +113,10 @@
     align-items: center;
   }
 
+  .portfolio {
+    padding-top: 150px;
+  }
+
   /*Test slider*/
 
   .mySlides {
