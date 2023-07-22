@@ -68,10 +68,6 @@
     text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
   }
 
-  .home {
-    position: relative;
-  }
-
   .url {
     color: #246fb5;
     text-decoration: none;
@@ -149,7 +145,7 @@
 
   .main_contact {
     padding-bottom: 350px;
-    margin-left: 275px;
+    margin-left: 90px;
   }
 
   .container {
@@ -168,6 +164,14 @@
 
   .image_contact a {
     text-align: left;
+  }
+
+  .main_contact a {
+    margin-left: -100px;
+  }
+
+  .contact_us {
+    padding-top: 150px;
   }
 
   /*Test slider*/
