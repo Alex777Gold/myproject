@@ -122,9 +122,15 @@
 
   .component-portfolio {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
+  }
+
+  .img-container {
+    display: grid;
+    grid-template-columns: auto auto; /* Два столбца, которые будут подстраиваться под содержимое элементов */
+    justify-items: center;
   }
 
   .about_us, .portfolio {
@@ -255,6 +261,12 @@
     font-size: 15px;
   }
 
+  text {
+    font-size: 240%;
+    text-align: left;
+    transform: translateX(-30%);
+  }
+
   .navbar {
     background-color: white;
   }
@@ -265,33 +277,60 @@
   }
 
   .logo-img {
-    margin-right: -1%;
-    width: 60%;
+    margin-right: -55%;
+    width: 90%;
     float: right;
   }
 
-  .component {
-    padding-top: 30%;
-    width: 100%;
+  .component, .component-portfolio {
     grid-template-columns: 1fr;
   }
-
+  
   .slider {
     width: 65%;
     height: auto;
+    text-align: center;
   }
 
   .mySlides {
+    text-align: center;
+    margin-left: 5%;
     width: 250px;
     height: 250px;
   } 
 
   .main-text {
-    width: 85%;
+    width: 95%;
   }
 
   .dot {
     border-radius: 0;
     height: 5px;
   }
+
+  .image {
+    width: 100%;
+  }
+
+  .image img {
+    width: 85%;
+  }
+
+  .home, .about_us, .portfoli, .contact_us {
+    padding-top: 15%;
+  }
+
+  .component img {
+    width: 85%;
+  }
+
+  .main_contact {
+    padding-bottom: 70%;
+    padding-left: 0;
+  }
+
+  .container {
+    text-align: center;
+  }
+  
  }
