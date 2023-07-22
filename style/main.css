@@ -312,7 +312,8 @@
   }
 
   .image {
-    width: 85%;
+    text-align: center;
+    /*width: 85%;*/
   }
 
   .image img {
