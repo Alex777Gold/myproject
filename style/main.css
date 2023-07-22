@@ -248,3 +248,50 @@
  .fade img {
    width: 100%;
  }
+
+ @media (max-width: 438px) {
+
+  body {
+    font-size: 15px;
+  }
+
+  .navbar {
+    background-color: white;
+  }
+
+  .list {
+    display: none;
+    float: left;
+  }
+
+  .logo-img {
+    margin-right: -1%;
+    width: 60%;
+    float: right;
+  }
+
+  .component {
+    padding-top: 30%;
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+
+  .slider {
+    width: 65%;
+    height: auto;
+  }
+
+  .mySlides {
+    width: 250px;
+    height: 250px;
+  } 
+
+  .main-text {
+    width: 85%;
+  }
+
+  .dot {
+    border-radius: 0;
+    height: 5px;
+  }
+ }
