@@ -62,19 +62,23 @@
             </div>
 
             <div class="mySlides fade">
-              <img src="/img/slide_2.png" style="width: 100%" />
+              <img class="icon" src="/img/slide_2.png" style="width: 100%" />
             </div>
 
             <div class="mySlides fade">
-              <img src="/img/slide_3.png" style="width: 100%" />
+              <img class="icon" src="/img/slide_3.png" style="width: 100%" />
             </div>
 
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
+            <a class="prev" onclick="plusSlides(-1)">
+              <img src="/img/icon_left.png" alt="left" />
+            </a>
+            <a class="next" onclick="plusSlides(1)">
+              <img src="/img/icon_right.png" alt="right" />
+            </a>
           </div>
           <br />
 
-          <div style="text-align: center">
+          <div class="dots">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>

@@ -141,6 +141,16 @@ body {
 
   /*Test slider*/
 
+  .mySlides {
+    width: 500px;
+    height: 500px;
+  }
+
+  .dots {
+    text-align: center;
+    margin-top: 60px;
+  }
+
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
@@ -152,38 +162,23 @@ body {
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 25%;
   width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: black;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
   user-select: none;
+}
+
+.icon {
+  width: 35px;
+}
+
+.prev {
+  left: -15%;
 }
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
+  right: -15%;
   border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
 }
 
 .slider {
