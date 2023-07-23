@@ -17,9 +17,12 @@
     background-color: white;
   }
 
+  .mobile_background {
+    display: none;
+  }
+
   .mobile {
     display: none;
-    background-color: #246FB5;
     margin: 0 auto;
     margin-right: 175px;
   }
@@ -282,6 +285,16 @@
   .navbar {
     display: flex;
     justify-content: space-between;
+    padding: 0;
+  }
+
+  .mobile_background {
+    /*position: relative;*/
+    position: absolute;
+    z-index: -1;
+    background-color: #406E99;
+    width: 215px;
+    height: 100vh;
   }
 
   .menu-icon {
