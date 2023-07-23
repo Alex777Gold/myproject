@@ -416,6 +416,21 @@
   .navbar {
     display: flex;
     justify-content: space-between;
+    padding: 0;
+    height: 100px;
+  }
+
+  .mobile_background {
+    /*position: relative;*/
+    position: absolute;
+    z-index: -1;
+    background-color: #406E99;
+    width: 220vh;
+    height: 329px;
+  }
+
+  .menu h3 {
+    color: white;
   }
 
   .menu-icon {
@@ -433,15 +448,17 @@
     margin-bottom: 5px;
   }
 
-  .navbar {
-    width: 100%;
-    padding: 1%;
-    height: 5%;
-    background-color: white;
+  .mobile {
+    margin-right: 80%;
   }
 
   .list {
+    padding-left: 40%;
     display: none;
+  }
+
+  .list ul {
+    grid-template-columns: 1fr;
   }
 
   .logo-img {

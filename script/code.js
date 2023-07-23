@@ -44,6 +44,7 @@ toggleMenuButton.addEventListener("click", function () {
 
 closing.addEventListener("click", function () {
   mainMenu.style.display = "none";
+  logoImg.style.display = "block";
   toggleMenuButton.style.display = "block";
   mobile_background.style.display = "none";
 });
