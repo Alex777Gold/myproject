@@ -17,6 +17,13 @@
     background-color: white;
   }
 
+  .mobile {
+    display: none;
+    background-color: #246FB5;
+    margin: 0 auto;
+    margin-right: 175px;
+  }
+
   .list ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -301,6 +308,14 @@
   .list {
     display: none;
     float: left;
+  }
+
+  .list {
+    padding-top: -50%;
+  }
+
+  .list ul {
+    grid-template-columns: 1fr;
   }
 
   .logo-img {
