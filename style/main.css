@@ -268,9 +268,28 @@
  }
 
  @media (max-width: 438px) {
-
   body {
     font-size: 15px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu-icon {
+    width: 50px;
+    display: block;
+    cursor: pointer;
+    margin: 5%;
+  }
+
+  .menu-icon span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: #246FB5;
+    margin-bottom: 5px;
   }
 
   text {
@@ -285,9 +304,14 @@
   }
 
   .logo-img {
+    padding-top: -50%;
     margin-right: -55%;
     width: 90%;
     float: right;
+  }
+
+  .component {
+    margin-left: 10px;
   }
 
   .component, .component-portfolio {
@@ -354,6 +378,26 @@
 
   body {
     font-size: 15px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu-icon {
+    width: 50px;
+    display: block;
+    cursor: pointer;
+    margin: 5%;
+  }
+
+  .menu-icon span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: #246FB5;
+    margin-bottom: 5px;
   }
 
   .navbar {
