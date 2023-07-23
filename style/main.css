@@ -407,7 +407,7 @@
   
  }
 
- @media (min-width: 932px) {
+ @media (max-width: 932px) {
 
   body {
     font-size: 15px;
