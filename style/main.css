@@ -286,6 +286,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0;
+    height: 150px;
   }
 
   .mobile_background {
@@ -294,7 +295,11 @@
     z-index: -1;
     background-color: #406E99;
     width: 215px;
-    height: 100vh;
+    height: 110vh;
+  }
+
+  .menu h3 {
+    color: white;
   }
 
   .menu-icon {
