@@ -276,7 +276,7 @@
  .main-text-h1 {
   text-align: center;
  }
-
+/*vertical*/
  @media (max-width: 438px) {
   body {
     font-size: 15px;
@@ -406,7 +406,7 @@
   }
   
  }
-
+/*horizonatl*/
 @media (max-width: 932px) and (min-width: 439px) {
 
   body {
