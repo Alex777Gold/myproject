@@ -353,11 +353,11 @@
     width: 90%;
     float: right;
   }
-
+/*
   .component {
     margin-left: 10px;
   }
-
+*/
   .component, .component-portfolio {
     grid-template-columns: 1fr;
   }
