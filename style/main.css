@@ -199,6 +199,11 @@
     width: auto;
     height: auto;
     margin: 3px;
+    padding-bottom: 20px;
+  }
+
+  .img-container .image {
+    margin: 15px;
   }
 
   /*Test slider*/
@@ -395,6 +400,10 @@
     width: 160px;
     height: auto;
   }
+
+  .img-container .image {
+    margin: 1px;
+  }
 /*
   .image img {
     width: 160px;
@@ -531,6 +540,10 @@
   .image img {
     width: 60%;
     margin-top: -37%;
+  }
+
+  .img-container .image {
+    margin: 0px;
   }
 
   .component-portfolio {
