@@ -103,18 +103,15 @@
   .slider {
     width: 20%;
     float: right;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
     /*from notebook*/
     padding-top: 100px;
   }
 
   svg {
     margin-top: -3%;
-  }
-
-  .slider {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
   }
 
   .slide {
@@ -209,11 +206,8 @@
   /*Test slider*/
 
   .mySlides {
-    /*width: 500px;*/
+    width: 500px;
     height: 500px;
-    /*from notebook*/
-    width: 400px;
-    margin-left: 50px;
   }
 
   .dots {
