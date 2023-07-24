@@ -1,6 +1,7 @@
   body {
     font-family: "Barlow", sans-serif;
     margin: 0%;
+    padding: 0%;
   }
 /*Test*/
   h1, h2 {
@@ -102,6 +103,8 @@
   .slider {
     width: 20%;
     float: right;
+    /*from notebook*/
+    padding-top: 100px;
   }
 
   svg {
@@ -201,13 +204,18 @@
   /*Test slider*/
 
   .mySlides {
-    width: 500px;
+    /*width: 500px;*/
     height: 500px;
+    /*from notebook*/
+    width: 400px;
+    margin-left: 50px;
   }
 
   .dots {
     text-align: center;
-    margin-top: 55px;
+    /*margin-top: 55px;*/
+    /*from notebook*/
+    margin-top: -45px;
   }
 
 /* Slideshow container */
@@ -355,6 +363,7 @@
     width: 65%;
     height: auto;
     text-align: center;
+    margin-top: -75px;
   }
 
   .mySlides {
@@ -369,8 +378,12 @@
   }
 
   .dot {
-    border-radius: 0;
+    border-radius: 0px;
     height: 5px;
+  }
+
+  .dots {
+    margin-top: 0px;
   }
 
   .image {
@@ -498,6 +511,7 @@
   .slider {
     margin-top: 2%;
     height: 50%;
+    padding-top: 0px;
   }
 
   .dots {
