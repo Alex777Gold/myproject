@@ -286,9 +286,10 @@
    width: 100%;
  }
 
- .main-text-h1 {
+ .main-text-h1 h2 {
   text-align: center;
  }
+
 /*vertical*/
  @media (max-width: 438px) {
   body {
