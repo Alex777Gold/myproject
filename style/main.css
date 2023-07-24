@@ -472,6 +472,10 @@
     margin-right: 80%;
   }
 
+  .main-text-h1 h2 {
+    text-align: left;
+  }
+
   .list {
     padding-left: 40%;
     display: none;
