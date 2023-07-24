@@ -206,16 +206,15 @@
   /*Test slider*/
 
   .mySlides {
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
+    margin-left: 50px;
   }
 
   .dots {
     text-align: center;
-    /*margin-top: 55px;*/
     /*from notebook*/
-    margin-top: -45px;
-    margin-left: -25px;
+    margin-top: 55px;
   }
 
 /* Slideshow container */
