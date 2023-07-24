@@ -347,7 +347,8 @@
   }
 
   .logo-img {
-    padding-top: -50%;
+    /*padding-top: -50%;*/
+    margin-top: 3%;
     margin-right: -55%;
     width: 90%;
     float: right;
