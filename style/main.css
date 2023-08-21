@@ -20,6 +20,8 @@
 
   .mobile_background {
     display: none;
+    animation-name: slidesAnimation;
+    animation-duration: 0.25s;
   }
 
   .mobile {
@@ -211,7 +213,7 @@
     margin-left: 50px;
     /*Animation*/
     animation-name: slidesAnimation;
-    animation-duration: 1s;
+    animation-duration: 1.5s;
   }
   
     @keyframes slidesAnimation {

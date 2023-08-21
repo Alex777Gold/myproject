@@ -34,7 +34,7 @@ const closing = document.querySelector(".mobile");
 const mobile_background = document.querySelector(".mobile_background");
 
 
-toggleMenuButton.addEventListener("click", function () {
+toggleMenuButton.addEventListener("click", () => {
   mainMenu.style.display = "block";
   closing.style.display = "block";
   logoImg.style.display = "none";
@@ -42,7 +42,7 @@ toggleMenuButton.addEventListener("click", function () {
   mobile_background.style.display = "block";
 });
 
-closing.addEventListener("click", function () {
+closing.addEventListener("click", () => {
   mainMenu.style.display = "none";
   logoImg.style.display = "block";
   toggleMenuButton.style.display = "block";
