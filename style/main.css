@@ -209,12 +209,12 @@
     width: 400px;
     height: 400px;
     margin-left: 50px;
-    /*Anumation*/
-    animation-name: slides_animation;
+    /*Animation*/
+    animation-name: slidesAnimation;
     animation-duration: 1s;
   }
   
-    @keyframes slides_animation {
+    @keyframes slidesAnimation {
       0%   {opacity: 0%;}
       25%  {opacity: 25%;}
       50%  {opacity: 50%;}
