@@ -11,7 +11,7 @@
   .navbar {
     position: fixed;
     width: 100%;
-    height: 12%;
+    height: 11%;
     float: right;
     padding: 3%;
     z-index: 9999;
@@ -141,7 +141,7 @@
 
   .img-container {
     display: grid;
-    grid-template-columns: auto auto; /* Два столбца, которые будут подстраиваться под содержимое элементов */
+    grid-template-columns: auto auto;
     justify-items: center;
   }
 
