@@ -209,11 +209,10 @@
     width: 400px;
     height: 400px;
     margin-left: 50px;
-
-      /*Anumation*/
-      animation-name: slides_animation;
-      animation-duration: 1s;
-    }
+    /*Anumation*/
+    animation-name: slides_animation;
+    animation-duration: 1s;
+  }
   
     @keyframes slides_animation {
       0%   {opacity: 0%;}
