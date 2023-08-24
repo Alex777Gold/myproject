@@ -294,6 +294,63 @@
   text-align: center;
  }
 
+ .ourwork .component-portfolio {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
+}
+
+.content-service {
+  text-align: center;
+}
+
+#taskList {
+  list-style-type: none;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+#taskList span {
+  width: 40%;
+}
+
+#taskList span, img, button {
+  margin: 1%;
+}
+
+.service, .service button, .service input {
+  text-align: center;
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.service button {
+  color: white;
+  background-color: #246fb5;
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.service input {
+  outline:none;
+  border-radius: 10px;
+  /* border-color: #246FB5; */
+  border: 2px solid #246FB5;
+
+}
+
+.service button, .service input {
+  padding: 10px;
+}
+
 /*vertical*/
  @media (max-width: 438px) {
   body {
@@ -454,7 +511,7 @@
     z-index: -1;
     background-color: #406E99;
     width: 220vh;
-    height: 329px;
+    height: 360px;
   }
 
   .menu h3 {
