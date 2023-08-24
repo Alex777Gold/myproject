@@ -351,6 +351,10 @@
   padding: 10px;
 }
 
+#ourwork {
+  padding-top: 5%;
+}
+
 /*vertical*/
  @media (max-width: 438px) {
   body {

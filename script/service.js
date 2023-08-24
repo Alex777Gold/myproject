@@ -9,7 +9,7 @@ $(document).ready(function () {
         method: "GET",
         headers: {
           "X-RapidAPI-Key":
-            "SECRET KEY",
+            "secret key",
           "X-RapidAPI-Host": "twitter241.p.rapidapi.com",
         },
       };
@@ -42,14 +42,5 @@ $(document).ready(function () {
 
     $("#taskList").on("click", "button", function () {
       $(this).closest("li").remove();
-    });
-
-    $("#taskList").on("click", "input[type='checkbox']", function () {
-      const taskItem = $(this).closest("li");
-      if ($(this).prop("checked")) {
-        taskItem.addClass("completed");
-      } else {
-        taskItem.removeClass("completed");
-      }
     });
   });
