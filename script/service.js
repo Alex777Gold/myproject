@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  //api request
     $("#addTaskBtn").click(function () {
       var inputValue = $("#taskInput").val();
       const settings = {
@@ -9,11 +10,12 @@ $(document).ready(function () {
         method: "GET",
         headers: {
           "X-RapidAPI-Key":
-            "secret key",
+            "secret key", //secret key
           "X-RapidAPI-Host": "twitter241.p.rapidapi.com",
         },
       };
 
+      //get data api
       $.ajax(settings).done(function (response) {
         let name = response.data.user.result.legacy.name;
         let data_create = response.data.user.result.legacy.created_at;
@@ -22,6 +24,7 @@ $(document).ready(function () {
         // $("#name").text("Name: " + name);
         // $("#data").text("Data create: " + data_create);
 
+        //add user to list
         const taskText = $("#taskInput").val().trim();
         if (taskText !== "") {
           const taskItem = $("<li>").append(
@@ -32,7 +35,7 @@ $(document).ready(function () {
               data_create +
               "</span></br><img src=" +
               account_img +
-              " alt='No image'></br><button>Delete</button>"
+              " alt='No image'></br><button>Delete</button></li>"
           );
           $("#taskList").append(taskItem);
           $("#taskInput").val("");
@@ -40,6 +43,7 @@ $(document).ready(function () {
       });
     });
 
+    //Deleta twitter info for user
     $("#taskList").on("click", "button", function () {
       $(this).closest("li").remove();
     });
