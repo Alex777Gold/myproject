@@ -35,7 +35,7 @@ $(document).ready(function () {
               data_create +
               "</span></br><img src=" +
               account_img +
-              " alt='No image'></br><button>Delete</button></li>"
+              " alt='account img'></br><button>Delete</button></li>"
           );
           $("#taskList").append(taskItem);
           $("#taskInput").val("");
