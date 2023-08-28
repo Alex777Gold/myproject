@@ -355,9 +355,8 @@
   padding-top: 7%;
 }
 
-#ourwork img {
-  width: 50%;
-  padding-top: 40%;
+.logo_author {
+  width: 70%;
 }
 
 /*vertical*/
@@ -498,6 +497,19 @@
   .container {
     text-align: center;
   }
+
+  .logo_author {
+    width: 69%;
+  }
+
+  #ourwork .image img {
+    width: 100%;
+  }
+
+  #ourwork {
+    padding-top: 27%;
+  }
+  
   
  }
 /*horizonatl*/
@@ -648,5 +660,13 @@
     float: left;
     grid-template-columns: 1fr 10fr 1fr 10fr;
     margin-bottom: 10%;
+  }
+
+  .logo_author {
+    width: 79%;
+  }
+
+  #ourwork .image {
+    padding-top: 35%;
   }
  }
