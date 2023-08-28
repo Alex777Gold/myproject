@@ -1,3 +1,4 @@
+//input output data
 $(document).ready( function() {
     $('#calculate_regresion').click(function() {
       var numberListx = $('#datax').val();
@@ -23,6 +24,7 @@ $(document).ready( function() {
     });
 });
 
+//Calculate regression line
 function regression_line(x, y) {
     const n_length = x.length;
 
@@ -54,10 +56,10 @@ function regression_line(x, y) {
     // return parseFloat(a_result.toFixed(4)) + " , " + parseFloat(b_result.toFixed(4));
   }
 
-  let first = [25,30,35,40,45,50];
-  let second = [78,70,65,58,48,42];
+  // let first = [25,30,35,40,45,50];
+  // let second = [78,70,65,58,48,42];
 
-  console.log(first);
-  console.log(second);
+  // console.log(first);
+  // console.log(second);
 
-  console.log(regression_line(first, second));
+  // console.log(regression_line(first, second));
