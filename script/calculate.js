@@ -1,32 +1,24 @@
 $(document).ready( function() {
     $('#calculate_regresion').click(function() {
-        let value_x = []
-        let data_value_x = $('#datax').val();
-        value_x.push(data_value_x);
+      var numberListx = $('#datax').val();
+      var numberArrayx = numberListx.split(',').map(function(itemx) {
+          return parseInt(itemx);
+      });
 
-        let value_y = []
-        let data_value_y = $('#datay').val();
-        value_y.push(data_value_y);
+      console.log(numberArrayx);
 
-        value_x = value_x.toString();
-        let value_x_array = [];
+      var numberListy = $('#datay').val();
+      var numberArrayy = numberListy.split(',').map(function(itemy) {
+          return parseInt(itemy);
+      });
 
-        value_y = value_y.toString();
+      console.log(numberArrayy);
 
-        // value_x = value_x.split(",").map(value => value.codePointAt(0) - 96);
-        // for (let index = 0; index < value_x.length; index++) {
-        //     value_x_array.push(value_x[index].charCodeAt(0));
-        // }
+      let calculate = regression_line(numberArrayx, numberArrayy);
 
-        value_x = value_x.split(",").map(value => value.codePointAt(0) - 96);
-        console.log(value_x);
-        value_y = value_y.split(",").map(value => value.codePointAt(0) - 96);
-        console.log(value_y);
+      console.log(calculate);
 
-        
-
-        let calculate = regression_line(value_x, value_y);
-        $('#calculate_result').text("Result: " + calculate);
+      $('#calculate_result').text("Result: " + calculate);
 
     });
 });
