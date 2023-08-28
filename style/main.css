@@ -355,6 +355,11 @@
   padding-top: 7%;
 }
 
+#ourwork img {
+  width: 50%;
+  padding-top: 40%;
+}
+
 /*vertical*/
  @media (max-width: 438px) {
   body {
