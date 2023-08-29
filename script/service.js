@@ -1,3 +1,18 @@
+//Display data
+function display(id, name, data_create, account_img) {
+  const taskItem = $("<li>").data("id", id).append(
+    "<span>" +
+      "Name: " +
+      name +
+      " Data create: " +
+      data_create +
+      "</span></br><img src=" +
+      account_img +
+      " alt='account img'></br><button>Delete</button></li>"
+  );
+  $("#taskList").append(taskItem);
+}
+
 // Load data fromn Local Storage in savedDataArray
 const savedDataArray = JSON.parse(localStorage.getItem('ApiDataArray')) || [];
 // Data display
@@ -5,17 +20,18 @@ if (savedDataArray.length > 0) {
   console.log('Data found:', savedDataArray);
 
   savedDataArray.forEach(jsonObject => {
-    const taskItem = $("<li>").data("id", jsonObject.id).append(
-      "<span>" +
-        "Name: " +
-        jsonObject.name +
-        " Data create: " +
-        jsonObject.data_create +
-        "</span></br><img src=" +
-        jsonObject.account_img +
-        " alt='account img'></br><button>Delete</button></li>"
-    );
-    $("#taskList").append(taskItem);
+    display(jsonObject.id, jsonObject.name, jsonObject.data_create, jsonObject.account_img)
+    // const taskItem = $("<li>").data("id", jsonObject.id).append(
+    //   "<span>" +
+    //     "Name: " +
+    //     jsonObject.name +
+    //     " Data create: " +
+    //     jsonObject.data_create +
+    //     "</span></br><img src=" +
+    //     jsonObject.account_img +
+    //     " alt='account img'></br><button>Delete</button></li>"
+    // );
+    // $("#taskList").append(taskItem);
   });
 
   $("#taskInput").val("");
@@ -50,32 +66,35 @@ $(document).ready(function () {
         let account_img =
           response.data.user.result.legacy.profile_image_url_https;
 
+          function generateUniqueId() {
+            return Date.now();
+          };
+
+        let id = generateUniqueId();
+
         //add user to list
         const taskText = $("#taskInput").val().trim();
         if (taskText !== "") {
-          const taskItem = $("<li>").append(
-            "<span>" +
-              "Name: " +
-              name +
-              " Data create: " +
-              data_create +
-              "</span></br><img src=" +
-              account_img +
-              " alt='account img'></br><button>Delete</button></li>"
-          );
-          $("#taskList").append(taskItem);
+          display(id, name, data_create, account_img)
+          // const taskItem = $("<li>").append(
+          //   "<span>" +
+          //     "Name: " +
+          //     name +
+          //     " Data create: " +
+          //     data_create +
+          //     "</span></br><img src=" +
+          //     account_img +
+          //     " alt='account img'></br><button>Delete</button></li>"
+          // );
+          // $("#taskList").append(taskItem);
           $("#taskInput").val("");
         }
 
         //Save data
         let apiDataArray = JSON.parse(localStorage.getItem('ApiDataArray')) || [];
-        const dataToSave = { id: generateUniqueId(), name: name, data_create: data_create, account_img: account_img };
+        const dataToSave = { id: id, name: name, data_create: data_create, account_img: account_img };
         apiDataArray.push(dataToSave);
         localStorage.setItem('ApiDataArray', JSON.stringify(apiDataArray));
-
-        function generateUniqueId() {
-          return Date.now();
-        };
 
       });
     });
