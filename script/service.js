@@ -21,17 +21,6 @@ if (savedDataArray.length > 0) {
 
   savedDataArray.forEach(jsonObject => {
     display(jsonObject.id, jsonObject.name, jsonObject.data_create, jsonObject.account_img)
-    // const taskItem = $("<li>").data("id", jsonObject.id).append(
-    //   "<span>" +
-    //     "Name: " +
-    //     jsonObject.name +
-    //     " Data create: " +
-    //     jsonObject.data_create +
-    //     "</span></br><img src=" +
-    //     jsonObject.account_img +
-    //     " alt='account img'></br><button>Delete</button></li>"
-    // );
-    // $("#taskList").append(taskItem);
   });
 
   $("#taskInput").val("");
@@ -76,17 +65,6 @@ $(document).ready(function () {
         const taskText = $("#taskInput").val().trim();
         if (taskText !== "") {
           display(id, name, data_create, account_img)
-          // const taskItem = $("<li>").append(
-          //   "<span>" +
-          //     "Name: " +
-          //     name +
-          //     " Data create: " +
-          //     data_create +
-          //     "</span></br><img src=" +
-          //     account_img +
-          //     " alt='account img'></br><button>Delete</button></li>"
-          // );
-          // $("#taskList").append(taskItem);
           $("#taskInput").val("");
         }
 
