@@ -33,7 +33,8 @@ if (savedDataArray.length > 0) {
 $(document).ready(function () {
   //api request
     $("#addTaskBtn").click(function () {
-      var inputValue = $("#taskInput").val();
+      let inputValue = $("#taskInput").val();
+      let secretKey = $("#secretkey").val();
       const settings = {
         async: true,
         crossDomain: true,
@@ -42,7 +43,7 @@ $(document).ready(function () {
         method: "GET",
         headers: {
           "X-RapidAPI-Key":
-            "secret key", //secret key
+          secretKey, //secret key
           "X-RapidAPI-Host": "twitter241.p.rapidapi.com",
         },
       };
